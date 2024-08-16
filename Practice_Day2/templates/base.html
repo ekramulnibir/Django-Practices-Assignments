@@ -1,3 +1,5 @@
+{%load static%}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +12,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <style>
+    {% comment %} <style>
       .container {
         display: flex;
         justify-content: center; 
@@ -19,9 +21,9 @@
         align-items: center; 
         flex-wrap: wrap; 
       }
-    </style>
+    </style> {% endcomment %}
 
-    {% comment %} <link rel="stylesheet" href="style.css"> {% endcomment %}
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
 </head>
 <body>
     
