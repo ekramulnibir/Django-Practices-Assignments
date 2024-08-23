@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="text-container">
+        <h1>ABOUT US</h1>
+        <h5>Our story</h5>
+        <p>
+            Delightful Bites started with a passion for food and a desire to share it with our community. From a small beginning, we’ve grown into a favorite spot for food lovers, dedicated to quality and excellence.
+        </p>
+        <h5>Our philosophy</h5>
+        <p>
+            Great food begins with the best ingredients. We use fresh produce, top cuts of meatcreate dishes that are both delicious and visually appealing.
+        </p>
+        <h5>Our mission</h5>
+        <p>
+            Our mission is to offer an exceptional dining experience, blending warmth and hospitality. Whether you’re here for a meal or a special occasion, we strive to make every visit memorable.
+        </p>
+        
+    </div>
+    <div class="img-container">
+        <img src="{%static '/images/aboutus.jpeg'%}" alt="about_us">
+    </div>
+</div>
+{% endblock content %}
