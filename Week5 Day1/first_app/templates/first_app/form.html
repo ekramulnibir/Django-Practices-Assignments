@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <form action="" method="post" style="width: 50%; height: 50%; margin:auto;">
+        {% csrf_token %}
+        <!-- {{ form | crispy }} -->
+        {% for fm in form  %}
+            {{fm.label_tag}}
+            {{fm}}
+            {{fm.errors | striptags }}
+        {% endfor %}
+        <br>
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+{% endblock content %}
